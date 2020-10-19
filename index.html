@@ -425,7 +425,7 @@
         </div>
          <form action="#" class="subscribe">
           <label class="label-subscribe"><span class="lable-subscribe-title">Подпишитесь на рассылку</span>
-            <input class="input-subscribe" type="email" name="email" placeholder="E-mail"></input></label>
+            <input class="input-subscribe" type="email" name="email" placeholder="E-mail"></label>
           <button class="submit-btn" type="submit">Подписаться</button>
          </form>
       </div>
@@ -438,34 +438,33 @@
               <label class="discription-input">Имя
                 <span class="modal-form-input-wrapper">
                   <input type="text" name="user-name" class="input-modal-form" required>
-                    <svg class="svg-input-modal-form" width="12px" height="12px">
+                    <svg class="svg-input-modal-form" width="18px" height="18px">
                   <use href="./images/sprite.svg#icon-person"></use>
-                    </svg></input>
+                    </svg>
                 </span>
               </label>
               <label class="discription-input">Телефон
                 <span class="modal-form-input-wrapper">
                   <input type="tel" name="user-tel" class="input-modal-form" required>
-                    <svg class="svg-input-modal-form" width="13px" height="13px">
+                    <svg class="svg-input-modal-form" width="18px" height="18px">
                   <use href="./images/sprite.svg#icon-phone"></use>
-                    </svg></input>
+                    </svg>
                 </span>
               </label>
               <label class="discription-input">Почта
                 <span class="modal-form-input-wrapper">
                   <input type="email" name="user-email" class="input-modal-form" required>
-                   <svg class="svg-input-modal-form" width="15px" height="12px">
+                   <svg class="svg-input-modal-form" width="18px" height="18px">
                   <use href="./images/sprite.svg#icon-email"></use>
-                   </svg></input>
+                   </svg>
                 </span>
               </label>
               <label class="discription-input">Комментарий
                 <textarea name="user-message" class="user-message" placeholder="Введите текст"></textarea>
               </label>
-              <label class="discription-input-policy">
-                <input type="checkbox" class="policy" name="policy" value="accept-policy"></input>
-                <span class="icon-checkbox">
-              </span>Соглашаюсь с рассылкой и принимаю &nbsp<a class="underline" href="#">Условия договора</a>
+              <input id="check-policy" type="checkbox" class="policy" name="policy" value="accept-policy">
+              <label class="discription-input-policy" for="check-policy">
+              Соглашаюсь с рассылкой и принимаю &nbsp;<a class="underline" href="#">Условия договора</a>
               </label>
               <button type="submit" class="submit-modal-button">Отправить</button>
             </form>
